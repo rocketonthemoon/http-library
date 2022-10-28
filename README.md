@@ -7,6 +7,11 @@
 
 1. download the main.js
 2. include it in your index.html using <script src="main.js"></script> tag
+3. delete these last two lines
+   [
+        const http = new EasyHttp();
+        export default http;
+   ]
 
 # for using in your projects as module
 
