@@ -28,7 +28,15 @@ class EasyHttp {
         return resData;
     }
 
-    
+    // delete method 
+
+    async delete(url) {
+        const response = await fetch(url,{
+            method: "DELETE"
+        });
+        const resData = response.json();
+        return resData;
+    }
 
 }
 
