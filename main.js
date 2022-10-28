@@ -38,6 +38,20 @@ class EasyHttp {
         return resData;
     }
 
+    // put method
+
+    async put(url,data) {
+        const response = await fetch(url,{
+            method: "PUT",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+        const resData = response.json();
+        return resData;
+    }
+
 }
 
 const http = new EasyHttp();
